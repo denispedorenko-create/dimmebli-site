@@ -1,0 +1,1173 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#1b2335">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DIMMebli">
+<meta property="og:title" content="DIMMebli — корпусні меблі на замовлення">
+<meta property="og:description" content="Кухні, шафи, гардеробні та інші корпусні меблі в Дніпрі та Самарі. Реалізовані проєкти з цінами.">
+<meta property="og:image" content="https://dimmebli.vercel.app/media/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Меблі DIMMebli</title>
+<meta name="description" content="Корпусні меблі на замовлення в Дніпрі та Самарі: кухні, шафи, гардеробні. Рахуємо у двох комплектаціях, робимо 3D-проєкт, виготовляємо й монтуємо.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Jost:wght@300;400;500&display=swap">
+<style>
+/* Портфоліо-каталог: світла сторінка з великими фото робіт; темно-сині смуги з логотипа для першого екрана, деталей і контактів; латунні підписи-специфікації як на кресленні. */
+:root{
+  --paper:#ffffff;
+  --mist:#f1f2f5;
+  --line:#dcdfe6;
+  --text:#1b2335;
+  --muted:#596276;
+  --brass:#8f7444;
+  --band:#1b2335;
+  --band-2:#243049;
+  --on-band:#f3f1ec;
+  --on-band-muted:#b3b9c7;
+  --sand:#cdb991;
+  --focus:#3f6fd8;
+  --display:"Jost","Futura","Century Gothic","Avenir Next",sans-serif;
+  --body:"Golos Text","Segoe UI","Helvetica Neue",Arial,sans-serif;
+  --step--1:clamp(.8rem,.78rem + .1vw,.86rem);
+  --step-0:clamp(.98rem,.95rem + .15vw,1.06rem);
+  --step-1:clamp(1.15rem,1.08rem + .35vw,1.35rem);
+  --step-2:clamp(1.45rem,1.3rem + .8vw,1.95rem);
+  --step-3:clamp(1.9rem,1.55rem + 1.8vw,3.1rem);
+  --radius:6px;
+  --wrap:1180px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0f141f;--mist:#171e2c;--line:#2b3448;--text:#e8eaf0;--muted:#a4abba;--brass:#cdb991;
+  --band:#1b2335;--band-2:#243049;--on-band:#f3f1ec;--on-band-muted:#b3b9c7;--sand:#cdb991;--focus:#8fb0ff;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0f141f;--mist:#171e2c;--line:#2b3448;--text:#e8eaf0;--muted:#a4abba;--brass:#cdb991;
+  --band:#1b2335;--band-2:#243049;--on-band:#f3f1ec;--on-band-muted:#b3b9c7;--sand:#cdb991;--focus:#8fb0ff;color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--paper);color:var(--text);font-family:var(--body);font-size:var(--step-0);line-height:1.6;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--paper)}
+a{color:inherit}
+img{max-width:100%;display:block}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.15;margin:0;text-wrap:balance;letter-spacing:.005em}
+p{margin:0}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--focus);outline-offset:3px;border-radius:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.eyebrow{font-family:var(--display);font-size:var(--step--1);letter-spacing:.22em;text-transform:uppercase;color:var(--brass);font-weight:500}
+.section{padding-block:clamp(56px,8vw,104px)}
+.section-head{display:grid;gap:14px;max-width:62ch;margin-bottom:clamp(28px,4vw,44px)}
+.section-head h2{font-size:var(--step-3)}
+.section-head p{color:var(--muted)}
+section[id]{scroll-margin-top:84px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 22px;border-radius:var(--radius);border:1px solid transparent;font-weight:500;text-decoration:none;cursor:pointer;transition:background .2s,color .2s,border-color .2s;white-space:nowrap}
+.btn-sand{background:var(--sand);color:#1b2335}
+.btn-sand:hover{background:#d9c8a6}
+.btn-ink{background:var(--band);color:var(--on-band)}
+.btn-ink:hover{background:var(--band-2)}
+.btn-ghost{border-color:currentColor;background:transparent}
+.btn-ghost:hover{background:rgba(205,185,145,.14)}
+.btn svg{width:18px;height:18px;flex:none}
+
+/* header */
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--paper);border-bottom:1px solid var(--line)}
+.header-row{display:flex;align-items:center;gap:20px;min-height:66px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text)}
+.logo svg{width:30px;height:26px;color:var(--brass);flex:none}
+.logo .bar{width:1px;height:26px;background:currentColor;opacity:.55}
+.logo .word{font-family:var(--display);font-weight:300;font-size:1.55rem;letter-spacing:.03em;line-height:1}
+.nav{display:none;gap:22px;margin-left:auto}
+.nav a{text-decoration:none;font-size:.95rem;color:var(--muted)}
+.nav a:hover{color:var(--text)}
+.header-tools{display:flex;align-items:center;gap:12px;margin-left:auto}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;padding:2px}
+.lang button{border:0;background:transparent;padding:5px 10px;border-radius:999px;font-size:.8rem;font-weight:600;letter-spacing:.06em;cursor:pointer;color:var(--muted)}
+.lang button[aria-pressed="true"]{background:var(--band);color:var(--on-band)}
+.header-cta{min-height:40px;padding:8px 16px;font-size:.92rem}
+.header-cta .long{display:none}
+@media (max-width:460px){
+  .header-row{gap:10px}
+  .logo{gap:7px}.logo svg{width:24px;height:21px}.logo .bar{display:none}.logo .word{font-size:1.25rem}
+  .header-tools{gap:8px}
+  .lang button{padding:4px 8px;font-size:.74rem}
+  .header-cta{padding:8px 12px;font-size:.86rem;min-height:38px}
+}
+@media (min-width:1020px){.nav{display:flex}.header-tools{margin-left:0}.header-cta .long{display:inline}.header-cta .short{display:none}}
+
+/* intro: project sheet; one scroll plays the video to the end */
+.intro{--sheet:#f5f6f8;--grid:#e3e7ee;--draft:#1b2335;position:relative;height:100vh;height:100svh;min-height:520px;overflow:hidden;background:#141a27;color:var(--draft)}
+.intro-media{position:absolute;inset:0}
+.intro-media video,.intro-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.intro-media video{opacity:0}
+.intro[data-state="playing"] .intro-media video,.intro[data-state="final"] .intro-media video{opacity:1}
+.intro-final{opacity:0;transition:opacity .6s}
+.intro[data-state="final"] .intro-final{opacity:1}
+.sheet{position:absolute;inset:0;z-index:1;background-color:var(--sheet);background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:24px 24px;background-position:center;transition:opacity .8s ease;cursor:pointer}
+.intro:not([data-state="drawing"]) .sheet{opacity:0;pointer-events:none}
+.sheet-grid{height:100%;display:grid;grid-template-columns:minmax(0,30fr) minmax(0,70fr);gap:clamp(20px,3vw,48px);align-items:center;
+  padding-top:calc(84px + env(safe-area-inset-top,0px));padding-bottom:calc(32px + env(safe-area-inset-bottom,0px));
+  padding-left:max(clamp(16px,4vw,56px),env(safe-area-inset-left,0px));padding-right:max(clamp(16px,4vw,56px),env(safe-area-inset-right,0px))}
+.sheet-copy h1{font-size:clamp(1.8rem,1.1rem + 2vw,3.2rem);font-weight:300;line-height:1.12;max-width:14ch;margin:0}
+.sheet-fig{margin:0;min-width:0;height:100%;display:flex;align-items:center;justify-content:center}
+.sheet-fig picture{display:contents}
+.sheet-fig img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;background:#fff;box-shadow:0 18px 50px rgba(27,35,53,.16),0 2px 6px rgba(27,35,53,.08);border-radius:2px}
+.intro-bar{position:absolute;z-index:4;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;gap:16px;
+  padding-top:calc(20px + env(safe-area-inset-top,0px));
+  padding-left:max(clamp(16px,4vw,56px),env(safe-area-inset-left,0px));padding-right:max(clamp(16px,4vw,56px),env(safe-area-inset-right,0px));color:var(--draft);transition:color .6s}
+.intro:not([data-state="drawing"]) .intro-bar{color:#f3f1ec}
+.intro .logo{color:inherit}
+.intro .logo svg{color:#8f7444}
+.intro:not([data-state="drawing"]) .logo svg{color:#cdb991}
+.contacts{position:relative}
+.contacts-btn{min-height:42px;padding:8px 18px;border-color:currentColor;color:inherit;background:transparent}
+.intro[data-state="drawing"] .contacts-btn{background:#f5f6f8}
+.contacts-btn:hover{background:rgba(143,116,68,.12)}
+.contact-menu{position:absolute;right:0;top:calc(100% + 8px);min-width:264px;display:grid;gap:4px;padding:8px;background:#fff;color:#1b2335;border:1px solid #dcdfe6;border-radius:8px;box-shadow:0 14px 40px rgba(14,19,30,.22)}
+.contact-menu a{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:6px;text-decoration:none;font-weight:500;color:#1b2335}
+.contact-menu a:hover,.contact-menu a:focus-visible{background:#eef0f4}
+.contact-menu svg{width:20px;height:20px;flex:none;color:#8f7444}
+.contact-menu small{margin-left:auto;white-space:nowrap;color:#596276;font-weight:400;font-variant-numeric:tabular-nums}
+.scrim{position:absolute;left:0;right:0;z-index:2;pointer-events:none;opacity:0;transition:opacity .6s}
+.scrim.top{top:0;height:26%;background:linear-gradient(rgba(14,19,30,.7),rgba(14,19,30,0))}
+.scrim.bottom{bottom:0;height:60%;background:linear-gradient(rgba(14,19,30,0),rgba(14,19,30,.4) 40%,rgba(14,19,30,.78))}
+.intro:not([data-state="drawing"]) .scrim.top,.intro[data-state="final"] .scrim.bottom{opacity:1}
+.final-copy{position:absolute;z-index:3;left:0;right:0;top:55%;display:grid;justify-items:center;gap:26px;text-align:center;color:#fff;opacity:0;transform:translateY(12px);transition:opacity .6s ease .15s,transform .6s ease .15s;pointer-events:none;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.intro[data-state="final"] .final-copy{opacity:1;transform:none;pointer-events:auto}
+.final-copy h2{font-size:clamp(1.7rem,1.1rem + 2.3vw,3.3rem);font-weight:300;max-width:20ch;text-shadow:0 2px 24px rgba(0,0,0,.35)}
+.final-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+.final-actions .btn-ghost{color:#f3f1ec}
+@media (max-width:900px), (max-aspect-ratio:1/1){
+  .sheet-grid{grid-template-columns:1fr;grid-template-rows:auto auto;align-content:center;gap:28px;padding-top:calc(92px + env(safe-area-inset-top,0px))}
+  .sheet-fig{height:auto;max-height:62svh}
+  .sheet-fig img{max-height:62svh}
+  .sheet-copy h1{max-width:18ch}
+}
+@media (max-aspect-ratio:3/4){
+  .final-copy{top:auto;bottom:calc(48px + env(safe-area-inset-bottom,0px))}
+  .scrim.bottom{height:55%}
+}
+@media (prefers-reduced-motion:reduce){.sheet,.final-copy,.intro-final{transition:none}}
+
+/* hero */
+.hero{background:var(--band);color:var(--on-band)}
+.hero-grid{display:grid;gap:clamp(28px,4vw,56px);padding-block:clamp(36px,6vw,80px);align-items:center}
+@media (min-width:900px){.hero-grid{grid-template-columns:1.02fr 1fr}}
+.hero-copy{display:grid;gap:22px;min-width:0}
+.hero .eyebrow{color:var(--sand)}
+.hero h1,.hero .hero-title{font-size:var(--step-3);font-weight:300;letter-spacing:.01em}
+.hero .hero-title b{font-weight:400}
+.hero .lead{color:var(--on-band-muted);font-size:var(--step-1);max-width:46ch;line-height:1.5}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-actions .btn-ghost{color:var(--on-band)}
+.facts{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:12px clamp(20px,4vw,40px);padding-top:8px;border-top:1px solid rgba(205,185,145,.28)}
+.fact{display:grid}
+.fact b{font-family:var(--display);font-weight:300;font-size:var(--step-2);color:var(--sand);font-variant-numeric:tabular-nums;line-height:1.2}
+.fact span{font-size:var(--step--1);color:var(--on-band-muted)}
+.hero-photo{position:relative;margin:0;min-width:0}
+.hero-photo img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius)}
+.hero-photo figcaption{position:absolute;left:12px;bottom:12px;background:rgba(27,35,53,.82);color:var(--on-band);font-size:var(--step--1);padding:6px 10px;border-radius:4px}
+
+/* pillars */
+.pillars{border-bottom:1px solid var(--line)}
+.pillars-grid{display:grid;gap:0;padding-block:8px}
+@media (min-width:800px){.pillars-grid{grid-template-columns:repeat(3,1fr)}}
+.pillar{padding:26px 0;display:grid;gap:8px;border-top:1px solid var(--line)}
+.pillar:first-child{border-top:0}
+@media (min-width:800px){.pillar{padding:34px 28px;border-top:0;border-left:1px solid var(--line)}.pillar:first-child{border-left:0;padding-left:0}}
+.pillar h3{font-size:var(--step-1);font-weight:400}
+.pillar p{color:var(--muted);font-size:.96rem}
+
+/* catalog */
+.catalog{display:grid;gap:20px;grid-template-columns:1fr}
+@media (min-width:640px){.catalog{grid-template-columns:repeat(2,1fr)}.card.feature{grid-column:span 2}}
+@media (min-width:1000px){.catalog{grid-template-columns:repeat(3,1fr)}.card.feature{grid-column:span 2;grid-row:span 1}}
+.card{display:flex;flex-direction:column;text-align:left;padding:0;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);overflow:hidden;cursor:pointer;transition:border-color .2s,transform .25s}
+.card:hover{border-color:var(--brass)}
+.card:hover .card-img img{transform:scale(1.03)}
+.card-img{aspect-ratio:4/3;overflow:hidden;background:var(--mist);position:relative;flex:1 0 auto}
+.card.feature .card-img{aspect-ratio:16/9}
+@media (min-width:1000px){.card.feature .card-img{aspect-ratio:16/10}}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card-count{position:absolute;right:10px;bottom:10px;background:rgba(27,35,53,.82);color:#f3f1ec;font-size:.76rem;padding:3px 9px;border-radius:999px;font-variant-numeric:tabular-nums}
+.card-body{display:grid;gap:6px;padding:16px 18px 18px}
+.card-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;font-size:var(--step--1);color:var(--muted)}
+.chip{display:inline-flex;align-items:center;padding:2px 9px;border-radius:999px;border:1px solid var(--line);font-size:.76rem;font-weight:500;letter-spacing:.02em;color:var(--text)}
+.chip.top{border-color:var(--brass);color:var(--brass)}
+.card h3{font-size:var(--step-1);font-weight:400}
+.card-foot{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-top:4px}
+.price{font-family:var(--display);font-size:var(--step-1);font-weight:500;font-variant-numeric:tabular-nums;white-space:nowrap}
+.more{font-size:.9rem;color:var(--brass);font-weight:500;white-space:nowrap}
+.catalog-cta{margin-top:24px}
+.catalog-note{margin-top:22px;color:var(--muted);font-size:.92rem;max-width:70ch}
+
+/* details band */
+.details{background:var(--band);color:var(--on-band)}
+.details .section-head p{color:var(--on-band-muted)}
+.details .eyebrow{color:var(--sand)}
+.detail-grid{display:grid;gap:22px;grid-template-columns:1fr}
+@media (min-width:600px){.detail-grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1000px){.detail-grid{grid-template-columns:repeat(4,1fr)}}
+.detail{display:grid;gap:12px;align-content:start;margin:0}
+.detail img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:var(--radius);background:var(--band-2)}
+.detail h3{font-size:var(--step-1);font-weight:400;color:var(--on-band)}
+.detail p{color:var(--on-band-muted);font-size:.95rem}
+
+/* materials */
+.kits{display:grid;gap:20px}
+@media (min-width:760px){.kits{grid-template-columns:1fr 1fr}}
+.kit{border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:grid;gap:12px;align-content:start}
+.kit.top{border-color:var(--brass)}
+.kit h3{font-size:var(--step-2);font-weight:300}
+.kit .brands{font-family:var(--display);font-size:var(--step-1);letter-spacing:.04em}
+.kit p{color:var(--muted)}
+.kit-note{margin-top:20px;color:var(--muted);max-width:70ch}
+.mat-list{margin-top:34px;display:grid;border-top:1px solid var(--line)}
+.mat-row{display:grid;gap:4px 24px;padding:14px 0;border-bottom:1px solid var(--line)}
+@media (min-width:640px){.mat-row{grid-template-columns:220px 1fr}}
+.mat-row dt{font-size:var(--step--1);letter-spacing:.14em;text-transform:uppercase;color:var(--brass);font-family:var(--display);font-weight:500;padding-top:3px}
+.mat-row dd{margin:0}
+
+/* process */
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:step}
+@media (min-width:860px){.steps{grid-template-columns:repeat(2,1fr);column-gap:48px}}
+.step{counter-increment:step;display:grid;grid-template-columns:52px 1fr;gap:4px 14px;padding:20px 0;border-top:1px solid var(--line)}
+.step::before{content:counter(step,decimal-leading-zero);grid-row:span 2;font-family:var(--display);font-weight:300;font-size:1.7rem;color:var(--brass);line-height:1.1;font-variant-numeric:tabular-nums}
+.step h3{font-size:var(--step-1);font-weight:400}
+.step p{color:var(--muted);font-size:.96rem;min-width:0}
+
+/* reviews */
+.reviews{background:var(--mist)}
+.quotes{display:grid;gap:20px}
+@media (min-width:760px){.quotes{grid-template-columns:repeat(2,1fr)}}
+.quote{margin:0;background:var(--paper);border-radius:var(--radius);padding:26px 24px;display:grid;gap:14px;align-content:space-between;border:1px solid var(--line)}
+.quote blockquote{margin:0;font-family:var(--display);font-weight:300;font-size:var(--step-1);line-height:1.45}
+.quote blockquote::before{content:"«";color:var(--brass)}
+.quote blockquote::after{content:"»";color:var(--brass)}
+.quote figcaption{font-size:var(--step--1);color:var(--muted)}
+.reviews-more{margin-top:24px}
+.reviews-more a{color:var(--brass);font-weight:500}
+
+/* about */
+.about-grid{display:grid;gap:32px}
+@media (min-width:900px){.about-grid{grid-template-columns:1fr 1fr;align-items:center}}
+.about-copy{display:grid;gap:16px;max-width:60ch}
+.about-copy h2{font-size:var(--step-3)}
+.about-copy p{color:var(--muted)}
+.about-copy p.strong{color:var(--text);font-size:var(--step-1);font-family:var(--display);font-weight:300;line-height:1.45}
+.about-photo img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius)}
+
+/* faq */
+.faq{display:grid;border-top:1px solid var(--line);max-width:860px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;padding:18px 0;font-size:var(--step-1);font-family:var(--display);font-weight:400}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--brass);font-weight:300;font-size:1.5rem;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq details p{padding:0 0 20px;color:var(--muted);max-width:68ch}
+
+/* contact band */
+.contact{background:var(--band);color:var(--on-band)}
+.contact-grid{display:grid;gap:36px}
+@media (min-width:900px){.contact-grid{grid-template-columns:1.1fr 1fr;align-items:start}}
+.contact h2{font-size:var(--step-3);font-weight:300}
+.contact .lead{color:var(--on-band-muted);font-size:var(--step-1);line-height:1.5;max-width:44ch}
+.contact .eyebrow{color:var(--sand)}
+.contact-copy{display:grid;gap:20px}
+.contact-copy .btn-ghost{color:var(--on-band)}
+.contact-list{display:grid;border-top:1px solid rgba(205,185,145,.28)}
+.c-row{display:grid;gap:4px;padding:16px 0;border-bottom:1px solid rgba(205,185,145,.28)}
+.c-row dt{font-size:var(--step--1);color:var(--sand);letter-spacing:.14em;text-transform:uppercase;font-family:var(--display);font-weight:500}
+.c-row dd{margin:0;display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px}
+.c-row .num{font-family:var(--display);font-size:var(--step-1);letter-spacing:.03em;font-variant-numeric:tabular-nums;user-select:all}
+.c-row a{color:var(--on-band)}
+.copy-btn{border:1px solid rgba(205,185,145,.5);background:transparent;color:var(--sand);border-radius:999px;padding:3px 12px;font-size:.8rem;cursor:pointer}
+.copy-btn:hover{background:rgba(205,185,145,.14)}
+
+.site-footer{background:var(--band);color:var(--on-band-muted);border-top:1px solid rgba(205,185,145,.2)}
+.footer-row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px;padding-block:28px;font-size:.88rem;align-items:center}
+.site-footer .logo{color:var(--on-band)}
+.site-footer .logo svg{color:var(--sand)}
+.tagline{font-family:var(--display);letter-spacing:.3em;font-size:.72rem;color:var(--sand);text-transform:uppercase}
+.privacy summary{cursor:pointer;color:var(--on-band)}
+.privacy p{margin-top:8px;max-width:60ch}
+
+/* project dialog */
+dialog{border:0;padding:0;background:var(--paper);color:var(--text);max-width:none;max-height:none}
+dialog::backdrop{background:rgba(10,14,22,.72)}
+.pd{width:min(1180px,100vw);height:100dvh;margin:0 auto}
+@media (min-width:900px){.pd{width:min(1180px,calc(100vw - 48px));height:min(760px,calc(100dvh - 48px));margin:auto;border-radius:8px}}
+.pd-inner{display:grid;height:100%;grid-template-rows:auto 1fr;overflow:hidden}
+@media (min-width:900px){.pd-inner{grid-template-columns:1.35fr 1fr;grid-template-rows:1fr}}
+.pd-media{background:#0d1119;display:grid;grid-template-rows:1fr auto;min-height:0;position:relative}
+.track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;height:min(58dvh,520px)}
+@media (min-width:900px){.track{height:auto;min-height:0}}
+.track::-webkit-scrollbar{display:none}
+.slide{flex:0 0 100%;scroll-snap-align:center;display:flex;align-items:center;justify-content:center;min-width:0}
+.slide img,.slide video{width:100%;height:100%;object-fit:contain}
+.nav-btn{position:absolute;top:calc(50% - 46px);width:44px;height:44px;border-radius:50%;border:0;background:rgba(243,241,236,.9);color:#1b2335;cursor:pointer;display:grid;place-items:center;font-size:1.3rem}
+.nav-btn.prev{left:12px}.nav-btn.next{right:12px}
+.nav-btn[disabled]{opacity:.3;cursor:default}
+.thumbs{display:flex;gap:6px;overflow-x:auto;padding:8px;background:#0d1119;scrollbar-width:thin}
+.thumbs button{flex:0 0 64px;height:48px;border:2px solid transparent;border-radius:3px;padding:0;overflow:hidden;cursor:pointer;background:#1b2335;opacity:.65}
+.thumbs button[aria-current="true"]{border-color:#cdb991;opacity:1}
+.thumbs img{width:100%;height:100%;object-fit:cover}
+.counter{position:absolute;left:12px;top:12px;background:rgba(13,17,25,.75);color:#f3f1ec;font-size:.8rem;padding:3px 10px;border-radius:999px;font-variant-numeric:tabular-nums}
+.pd-info{overflow-y:auto;padding:24px clamp(18px,3vw,32px) 28px;display:grid;gap:18px;align-content:start;min-height:0}
+.pd-top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.close-btn{border:1px solid var(--line);background:var(--paper);width:40px;height:40px;border-radius:50%;cursor:pointer;font-size:1.2rem;display:grid;place-items:center;flex:none}
+.close-float{position:absolute;right:12px;top:10px;z-index:2;background:rgba(243,241,236,.92);color:#1b2335;border:0}
+@media (min-width:900px){.close-float{display:none}}
+@media (max-width:899px){.pd-top .close-btn{display:none}}
+.pd-info h2{font-size:var(--step-2);font-weight:400}
+.pd-price{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 14px}
+.pd-price .price{font-size:var(--step-2)}
+.pd-summary{color:var(--muted)}
+.spec{margin:0;display:grid;border-top:1px solid var(--line)}
+.spec div{display:grid;grid-template-columns:minmax(110px,40%) 1fr;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.95rem}
+.spec dt{color:var(--muted)}
+.spec dd{margin:0}
+.spec-title{font-family:var(--display);font-size:var(--step--1);letter-spacing:.18em;text-transform:uppercase;color:var(--brass);font-weight:500;margin-bottom:-8px}
+.highlight{background:var(--mist);border-radius:var(--radius);padding:16px 18px;display:grid;gap:4px}
+.highlight b{font-family:var(--display);font-weight:500;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brass)}
+.pd-cta{display:grid;gap:8px}
+.pd-cta small{color:var(--muted);font-size:.84rem}
+
+/* callouts on project photos */
+.ph{position:relative;flex:none}
+.ph>img,.ph>video{display:block;width:100%;height:100%;object-fit:cover}
+.ph svg.leads{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.ph svg.leads line{stroke:#f3f1ec;stroke-width:1.5;vector-effect:non-scaling-stroke;filter:drop-shadow(0 0 2px rgba(0,0,0,.6))}
+.co-dot{position:absolute;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;border:2px solid #fff;background:#8f7444;color:#fff;font:600 12px/22px var(--body);text-align:center;padding:0;box-shadow:0 1px 6px rgba(0,0,0,.45);cursor:pointer}
+.co-label{position:absolute;width:max-content;max-width:min(250px,46%);background:rgba(14,19,30,.86);color:#f3f1ec;font-size:13px;line-height:1.35;padding:7px 10px;border-radius:4px;pointer-events:none}
+.co-label.l{transform:translate(-100%,-50%)}
+.co-label.r{transform:translate(0,-50%)}
+.pd-notes{margin:0;padding:0;list-style:none;display:none;gap:6px;counter-reset:n}
+.pd-notes li{display:grid;grid-template-columns:26px 1fr;gap:10px;align-items:start;font-size:.94rem;padding:6px 8px;border-radius:6px}
+.pd-notes li b{width:24px;height:24px;border-radius:50%;background:#8f7444;color:#fff;font:600 12px/24px var(--body);text-align:center}
+.pd-notes li.on{background:var(--mist)}
+@media (max-width:899px){
+  .co-label,.ph svg.leads{display:none}
+  .pd-notes{display:grid}
+}
+
+/* calc dialog */
+.cd{width:min(520px,100vw);max-height:100dvh;margin:auto;border-radius:0}
+@media (min-width:560px){.cd{border-radius:8px;max-height:calc(100dvh - 32px)}}
+.cd-inner{padding:26px clamp(18px,4vw,30px) 28px;display:grid;gap:18px;overflow-y:auto;max-height:inherit}
+.cd-head{display:flex;justify-content:space-between;gap:12px;align-items:start}
+.cd-head h2{font-size:var(--step-2);font-weight:400}
+.cd p.sub{color:var(--muted);font-size:.95rem}
+.field{display:grid;gap:8px;border:0;margin:0;padding:0;min-width:0}
+.field>label,.field legend{font-weight:500;font-size:.95rem;padding:0}
+textarea{width:100%;padding:10px 14px;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);color:var(--text);font:inherit;resize:vertical;min-height:84px}
+select,input[type=tel]{width:100%;min-height:48px;padding:10px 14px;border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);color:var(--text);font:inherit}
+select:focus,input:focus{outline:2px solid var(--focus);outline-offset:1px}
+.radios{display:grid;gap:8px}
+.radio{display:grid;grid-template-columns:auto 1fr;gap:2px 12px;align-items:start;padding:12px 14px;border:1px solid var(--line);border-radius:var(--radius);cursor:pointer}
+.radio:has(input:checked){border-color:var(--brass);background:var(--mist)}
+.radio input{margin:4px 0 0;accent-color:#8f7444;grid-row:span 2}
+.radio b{font-weight:500}
+.radio span{color:var(--muted);font-size:.86rem}
+.err{color:#b3261e;font-size:.88rem}
+:root[data-theme="dark"] .err{color:#ff8a80}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .err{color:#ff8a80}}
+.consent{font-size:.82rem;color:var(--muted)}
+.consent a{color:var(--brass)}
+.msg-box{background:var(--mist);border-radius:var(--radius);padding:14px 16px;font-size:.92rem;white-space:pre-wrap;border:1px solid var(--line)}
+.done-actions{display:grid;gap:10px}
+.done-actions .btn{width:100%}
+.mini{font-size:.84rem;color:var(--muted)}
+.linkish{background:none;border:0;padding:0;color:var(--brass);text-decoration:underline;cursor:pointer;font-weight:500}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--band);color:var(--on-band);padding:10px 18px;border-radius:999px;font-size:.9rem;z-index:100;box-shadow:0 6px 24px rgba(0,0,0,.25)}
+</style>
+</head>
+<body>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="chest" viewBox="0 0 30 26"><g fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2" y="2" width="26" height="18" rx=".5"/><path d="M2 8h26M2 14h26M15 2v6M13 5h0M17 5h0"/><path d="M7.5 5h3M19.5 5h3M13.5 11h3M13.5 17h3" stroke-linecap="round"/><path d="M4.5 20v3.5M25.5 20v3.5" stroke-linecap="round"/></g></symbol>
+  <symbol id="i-tg" viewBox="0 0 24 24"><path fill="currentColor" d="M21.4 4.2 2.9 11.3c-1.3.5-1.2 1.2-.2 1.5l4.7 1.5 1.8 5.6c.2.6.4.8.9.8.4 0 .6-.2.8-.4l2.3-2.2 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.7c.3-1.3-.5-1.9-1.4-1.5zM9.2 14.3l9.4-5.9c.4-.3.8-.1.5.2l-7.7 7-.3 3.3-1.9-4.6z"/></symbol>
+  <symbol id="i-viber" viewBox="0 0 24 24"><path fill="currentColor" d="M11.4 2C7.1 2.1 3.6 3.1 3.1 8.2c-.4 3.6-.1 6.4.9 8.5.5 1 1.3 1.6 2.3 1.9v2.6c0 .5.6.7.9.4l2.4-2.5c.6 0 1.3.1 2 .1 4.3-.1 7.8-1.1 8.3-6.2.4-3.6.1-6.4-.9-8.5C17.9 2.6 14.6 2 11.4 2zm.1 1.6c2.7 0 5.4.5 6.4 2.6.8 1.7 1.1 4.1.7 7.3-.4 4-3 4.8-6.9 4.9-.7 0-1.5 0-2.3-.1l-1.9 2v-2.3c-1-.2-1.7-.7-2.1-1.6-.8-1.7-1.1-4.1-.8-7.3.4-4 3.1-4.8 6.9-4.9zM8.7 6.6c-.3 0-.6.1-.8.4-.6.6-.9 1.4-.6 2.3.7 2.1 2.6 4.6 5.1 5.9.8.4 1.6.6 2.2.1.3-.2.6-.5.8-.8.2-.4.1-.8-.3-1.1l-1.3-.9c-.4-.3-.9-.2-1.2.1l-.4.5c-.9-.4-2.2-1.6-2.6-2.6l.5-.4c.3-.3.4-.8.1-1.2l-.9-1.4c-.2-.3-.4-.4-.6-.4zm3.3-.3a.4.4 0 0 0 0 .8c2 .1 3.6 1.7 3.7 3.7a.4.4 0 0 0 .8 0A4.5 4.5 0 0 0 12 6.3zm.1 1.4a.4.4 0 0 0 0 .8c1 .1 1.9.9 2 2a.4.4 0 0 0 .8 0 2.9 2.9 0 0 0-2.8-2.8z"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M5 3h3.5l1.6 4.4-2.1 1.3a11 11 0 0 0 5.3 5.3l1.3-2.1L19 13.5V17a2 2 0 0 1-2 2A15 15 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
+</svg>
+
+<section class="intro" id="pochatok" data-state="drawing" aria-label="DIMMebli">
+  <div class="intro-media">
+    <video id="intro-video" muted playsinline preload="none" aria-hidden="true"></video>
+    <img class="intro-final" id="intro-final" alt="Готова кухня: білі шафи до стелі, темна стільниця під камінь, холодильник праворуч" data-i18n-alt="intro_final_alt">
+  </div>
+  <div class="scrim top"></div><div class="scrim bottom"></div>
+  <div class="sheet" id="sheet">
+    <div class="sheet-grid">
+      <div class="sheet-copy">
+        <h1 data-i18n="intro_h1">Виготовляємо корпусні меблі на замовлення під усі Ваші потреби</h1>
+      </div>
+      <figure class="sheet-fig">
+        <picture>
+          <source media="(max-width: 900px), (max-aspect-ratio: 1/1)" srcset="media/sheet-persp.jpg">
+          <img src="media/sheet.jpg" fetchpriority="high" decoding="async" alt="Проєкт кухні: перспективний вигляд, план і розгортки стін із розмірами" data-i18n-alt="sheet_alt">
+        </picture>
+      </figure>
+    </div>
+  </div>
+  <div class="intro-bar">
+    <a class="logo" href="#pochatok" aria-label="DIMMebli"><svg><use href="#chest"/></svg><span class="bar"></span><span class="word">DIMmebli</span></a>
+    <div class="contacts">
+      <button type="button" class="btn contacts-btn" id="contact-btn" aria-expanded="false" aria-controls="contact-menu" data-i18n="intro_contacts">Контакти</button>
+      <div class="contact-menu" id="contact-menu" hidden>
+        <a href="https://t.me/+380985217103" target="_blank" rel="noopener"><svg><use href="#i-tg"/></svg>Telegram</a>
+        <a href="viber://chat?number=%2B380985217103"><svg><use href="#i-viber"/></svg>Viber</a>
+        <a href="tel:+380739787730"><svg><use href="#i-phone"/></svg><span data-i18n="intro_call">Подзвонити</span><small>073 978 77 30</small></a>
+      </div>
+    </div>
+  </div>
+  <div class="final-copy" aria-live="polite">
+    <h2 data-i18n="intro_h1">Виготовляємо корпусні меблі на замовлення під усі Ваші потреби</h2>
+    <div class="final-actions">
+      <button type="button" class="btn btn-sand" data-calc data-i18n="cta_calc">Розрахувати вартість</button>
+      <a class="btn btn-ghost" href="#proekty" data-i18n="intro_works">Наші роботи</a>
+    </div>
+  </div>
+</section>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="logo" href="#top" aria-label="DIMMebli">
+      <svg><use href="#chest"/></svg><span class="bar"></span><span class="word">DIMmebli</span>
+    </a>
+    <nav class="nav" aria-label="Розділи">
+      <a href="#proekty" data-i18n="nav_projects">Роботи</a>
+      <a href="#materialy" data-i18n="nav_materials">Матеріали</a>
+      <a href="#yak-pratsiuiemo" data-i18n="nav_process">Як працюємо</a>
+      <a href="#vidhuky" data-i18n="nav_reviews">Відгуки</a>
+      <a href="#kontakty" data-i18n="nav_contacts">Контакти</a>
+    </nav>
+    <div class="header-tools">
+      <div class="lang" role="group" aria-label="Мова">
+        <button type="button" id="lang-uk" data-lang="uk" aria-pressed="true">UA</button>
+        <button type="button" id="lang-ru" data-lang="ru" aria-pressed="false">RU</button>
+      </div>
+      <button type="button" class="btn btn-ink header-cta" data-calc><span class="long" data-i18n="cta_calc">Розрахувати вартість</span><span class="short" data-i18n="cta_calc_short">Розрахувати</span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="hero_eyebrow">Меблі на замовлення · Дніпро і Самар</p>
+        <h2 class="hero-title" data-i18n="hero_h1">Кухні, шафи, гардеробні та інші корпусні меблі</h2>
+        <p class="lead" data-i18n="hero_lead">Рахуємо у двох варіантах комплектації, показуємо 3D-проєкт, виготовляємо й встановлюємо під ключ.</p>
+        <div class="hero-actions">
+          <button type="button" class="btn btn-sand" data-calc data-i18n="cta_calc">Розрахувати вартість</button>
+          <a class="btn btn-ghost" href="https://t.me/+380985217103" target="_blank" rel="noopener"><svg><use href="#i-tg"/></svg><span data-i18n="cta_tg">Написати в Telegram</span></a>
+        </div>
+        <div class="facts">
+          <div class="fact"><b>8</b><span data-i18n="fact_years">років робимо меблі</span></div>
+          <div class="fact"><b>200</b><span data-i18n="fact_projects">реалізованих проєктів</span></div>
+          <div class="fact"><b>2</b><span data-i18n="fact_kits">варіанти комплектації</span></div>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <img src="img/kitchen-02/01.jpg" width="1600" height="1066" loading="lazy" decoding="async" alt="Кухня до стелі з білими акриловими фасадами і середнім рядом під дуб" data-i18n-alt="hero_alt">
+      </figure>
+    </div>
+  </section>
+
+  <section class="pillars" aria-label="Переваги">
+    <div class="wrap pillars-grid">
+      <div class="pillar"><h3 data-i18n="p1_t">Розміри під Ваш простір</h3><p data-i18n="p1_d">Рахуємо кожен сантиметр: меблі до стелі, від стіни до стіни, з місцем під Вашу техніку.</p></div>
+      <div class="pillar"><h3 data-i18n="p2_t">Менеджер, відповідальний за проєкт</h3><p data-i18n="p2_d">Від першого повідомлення до монтажу з Вами на зв'язку одна людина, яка знає Ваш проєкт.</p></div>
+      <div class="pillar"><h3 data-i18n="p3_t">Перевірені матеріали</h3><p data-i18n="p3_d">Плити Egger, Swisspan, Kronospan. Фурнітура Blum, Hettich, GTV, Muller на вибір.</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="proekty">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="proj_eyebrow">Каталог</p>
+        <h2 data-i18n="proj_h">Наші реалізовані проєкти</h2>
+        <p data-i18n="proj_p">Колір і стиль обирали клієнти, а ми радили, як усе розмістити, щоб було зручно. Натисніть, щоб дізнатися більше.</p>
+      </div>
+      <div class="catalog" id="catalog"></div>
+      <p class="catalog-note" data-i18n="proj_note">Ціна — вартість конкретного проєкту на момент виконання. Вартість Ваших меблів порахуємо за Вашими розмірами й матеріалами.</p>
+      <div class="catalog-cta"><button type="button" class="btn btn-ink" data-calc data-i18n="cta_similar">Розрахувати схожий проєкт</button></div>
+    </div>
+  </section>
+
+
+  <section class="section" id="materialy">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="mat_eyebrow">Матеріали й фурнітура</p>
+        <h2 data-i18n="mat_h">Дві комплектації під Ваш бюджет</h2>
+        <p data-i18n="mat_p">Комплектації відрізняються фурнітурою: петлями, напрямними шухляд, підйомними механізмами. Кожен розрахунок робимо в обох варіантах, щоб Ви бачили різницю в ціні.</p>
+      </div>
+      <div class="kits">
+        <div class="kit">
+          <p class="eyebrow" data-i18n="kit_base_label">Базова комплектація</p>
+          <h3 class="brands">Muller · GTV</h3>
+          <p data-i18n="kit_base_d">Фурнітура середнього сегменту для щоденного користування. Підходить, коли важливо вкластися в бюджет.</p>
+        </div>
+        <div class="kit top">
+          <p class="eyebrow" data-i18n="kit_top_label">Топова комплектація</p>
+          <h3 class="brands">Blum · Hettich</h3>
+          <p data-i18n="kit_top_d">Австрійська і німецька фурнітура преміум-сегменту з плавним ходом і тихим закриванням.</p>
+        </div>
+      </div>
+      <dl class="mat-list">
+        <div class="mat-row"><dt data-i18n="m1_t">Плити й фасади</dt><dd>Egger · Swisspan · Kronospan · Luxeform · Nieman · AGT</dd></div>
+        <div class="mat-row"><dt data-i18n="m2_t">Стільниці</dt><dd data-i18n="m2_d">HPL і ЛДСП: Egger · Fundermax · Arpa</dd></div>
+        <div class="mat-row"><dt data-i18n="m3_t">Фурнітура</dt><dd>Blum · Hettich · GTV · Muller</dd></div>
+        <div class="mat-row"><dt data-i18n="m4_t">Відкривання</dt><dd data-i18n="m4_d">Профіль Gola без ручок, врізні або накладні ручки, відкривання від натиску</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section" id="yak-pratsiuiemo" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="proc_eyebrow">Як працюємо</p>
+        <h2 data-i18n="proc_h">Від фото приміщення до монтажу</h2>
+      </div>
+      <ol class="steps">
+        <li class="step"><h3 data-i18n="s1_t">Заявка</h3><p data-i18n="s1_d">Напишіть, що потрібно, і надішліть фото приміщення з приблизними розмірами або картинку, яка подобається.</p></li>
+        <li class="step"><h3 data-i18n="s2_t">Попередній розрахунок</h3><p data-i18n="s2_d">Рахуємо у двох варіантах комплектації, щоб Ви бачили різницю в ціні.</p></li>
+        <li class="step"><h3 data-i18n="s3_t">Ескіз або 3D-візуалізація</h3><p data-i18n="s3_d">Показуємо, як виглядатимуть меблі, і вносимо правки.</p></li>
+        <li class="step"><h3 data-i18n="s4_t">Замір</h3><p data-i18n="s4_d">Заміряємо приміщення й на місці обговорюємо конструкцію та розміщення техніки.</p></li>
+        <li class="step"><h3 data-i18n="s5_t">Матеріали й договір</h3><p data-i18n="s5_d">Разом обираємо матеріали й фіксуємо остаточну вартість у договорі.</p></li>
+        <li class="step"><h3 data-i18n="s6_t">Виготовлення</h3><p data-i18n="s6_d">Орієнтовно кухня — близько 1,5 місяця, шафа — близько 3 тижнів.</p></li>
+        <li class="step"><h3 data-i18n="s7_t">Доставка й монтаж</h3><p data-i18n="s7_d">Привозимо, збираємо, встановлюємо й доналаштовуємо фасади та механізми.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section reviews" id="vidhuky">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="rev_eyebrow">Відгуки</p>
+        <h2 data-i18n="rev_h">Що пишуть клієнти</h2>
+        <p data-i18n="rev_p">Цитати з листування з клієнтами.</p>
+      </div>
+      <div class="quotes">
+        <figure class="quote"><blockquote>Колега хоче кухню, дав ваш контакт.</blockquote><figcaption data-i18n="q1">Клієнт, якому ми робили кухню, порекомендував нас колезі</figcaption></figure>
+        <figure class="quote"><blockquote>Нарешті надумали за прихожу в квартиру, то хотіли б замовити, якщо зараз маєте час!</blockquote><figcaption data-i18n="q2">Клієнт повернувся через півтора року · передпокій</figcaption></figure>
+        <figure class="quote"><blockquote>Бо відразу важко було уявити і зрозуміти, як воно має бути</blockquote><figcaption data-i18n="q3">Клієнт про 3D-візуалізацію</figcaption></figure>
+        <figure class="quote"><blockquote>Нехай буде так, Ви краще на тому розумієтесь.</blockquote><figcaption data-i18n="q4">Клієнт про конструкцію кухні</figcaption></figure>
+      </div>
+      <p class="reviews-more"><a href="https://www.instagram.com/dimmebli/" target="_blank" rel="noopener" data-i18n="rev_more">Ще відгуки — в Instagram @dimmebli, у розділі «Відгуки»</a></p>
+    </div>
+  </section>
+
+  <section class="section" id="pro-nas">
+    <div class="wrap about-grid">
+      <div class="about-copy">
+        <p class="eyebrow" data-i18n="about_eyebrow">Про компанію</p>
+        <h2 data-i18n="about_h">DIMMebli</h2>
+        <p class="strong" data-i18n="about_p1">Робимо корпусні меблі на замовлення з 2018 року. За цей час — близько 200 проєктів: кухні, шафи, гардеробні, передпокої, меблі для санвузла.</p>
+        <p data-i18n="about_p2">Колір і стиль обираєте Ви. Ми відповідаємо за те, щоб меблями було зручно користуватися: де стоїть техніка, на якій висоті полиці, що висувається і як відкривається.</p>
+        <p data-i18n="about_p3">Від першого повідомлення до монтажу з Вами на зв'язку одна людина, яка знає Ваш проєкт. Не треба пояснювати все спочатку різним менеджерам.</p>
+      </div>
+      <figure class="about-photo" style="margin:0"><img src="img/kitchen-02/09.jpg" loading="lazy" alt="Висувні шухляди Blum у білій кухні" data-i18n-alt="about_alt"></figure>
+    </div>
+  </section>
+
+  <section class="section" id="pytannia" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head"><p class="eyebrow" data-i18n="faq_eyebrow">Питання</p><h2 data-i18n="faq_h">Часті питання</h2></div>
+      <div class="faq">
+        <details><summary data-i18n="f1_q">Як дізнатися вартість?</summary><p data-i18n="f1_a">Напишіть, що потрібно, і надішліть фото приміщення з розмірами або картинку, яка подобається. Порахуємо у двох варіантах комплектації. Остаточну вартість фіксуємо після заміру й вибору матеріалів.</p></details>
+        <details><summary data-i18n="f2_q">Чи потрібен дизайн-проєкт?</summary><p data-i18n="f2_a">Ні. Достатньо фото чи картинки, яка подобається. Ескіз або 3D-візуалізацію зробимо самі.</p></details>
+        <details><summary data-i18n="f3_q">Чи консультуєте щодо планування?</summary><p data-i18n="f3_a">Так. Підкажемо, де поставити техніку й мийку, скільки зробити шухляд і полиць, щоб кухнею чи шафою було зручно користуватися.</p></details>
+        <details><summary data-i18n="f4_q">Скільки часу займає виготовлення?</summary><p data-i18n="f4_a">Орієнтовно кухня — близько 1,5 місяця, шафа — близько 3 тижнів від підписання договору. Точний термін називаємо після вибору матеріалів.</p></details>
+        <details><summary data-i18n="f5_q">Чи можна погодити все дистанційно?</summary><p data-i18n="f5_a">Розрахунок, ескіз і правки — так, у Telegram чи Viber. Замір робимо на місці.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="kontakty">
+    <div class="wrap contact-grid">
+      <div class="contact-copy">
+        <p class="eyebrow" data-i18n="c_eyebrow">Контакти</p>
+        <h2 data-i18n="c_h">Розрахуємо Ваші меблі</h2>
+        <p class="lead" data-i18n="c_lead">Надішліть фото й розміри приміщення або картинку, яка подобається. Відповімо й надішлемо орієнтовний розрахунок протягом 2 годин у робочий час.</p>
+        <div class="hero-actions">
+          <button type="button" class="btn btn-sand" data-calc data-i18n="cta_calc">Розрахувати вартість</button>
+          <a class="btn btn-ghost" href="https://t.me/+380985217103" target="_blank" rel="noopener"><svg><use href="#i-tg"/></svg>Telegram</a>
+        </div>
+      </div>
+      <dl class="contact-list">
+        <div class="c-row"><dt data-i18n="c_phone">Телефон</dt><dd><a class="num" href="tel:+380739787730">073 978 77 30</a><button type="button" class="copy-btn" data-copy="+380739787730" data-i18n="copy">Скопіювати</button></dd></div>
+        <div class="c-row"><dt>Telegram · Viber</dt><dd><span class="num">098 521 71 03</span><a href="https://t.me/+380985217103" target="_blank" rel="noopener">Telegram</a><a href="viber://chat?number=%2B380985217103">Viber</a><button type="button" class="copy-btn" data-copy="+380985217103" data-i18n="copy">Скопіювати</button></dd></div>
+        <div class="c-row"><dt>Instagram</dt><dd><a class="num" href="https://www.instagram.com/dimmebli/" target="_blank" rel="noopener">@dimmebli</a></dd></div>
+        <div class="c-row"><dt data-i18n="c_where">Де працюємо</dt><dd data-i18n="c_where_d">Дніпро і Самар</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <a class="logo" href="#top" aria-label="DIMMebli"><svg><use href="#chest"/></svg><span class="bar"></span><span class="word">DIMmebli</span></a>
+    <span class="tagline">Art is everywhere</span>
+    <details class="privacy" id="privacy"><summary data-i18n="priv_t">Політика конфіденційності</summary><p data-i18n="priv_d">Сторінка не зберігає Ваші дані. Номер телефону з форми потрапляє лише в повідомлення, яке Ви самі надсилаєте нам у Telegram чи Viber. Ми використовуємо його тільки, щоб зв'язатися з Вами щодо розрахунку.</p></details>
+    <span>© 2026 DIMMebli</span>
+  </div>
+</footer>
+
+<dialog class="pd" id="project" aria-labelledby="pd-title">
+  <div class="pd-inner">
+    <div class="pd-media">
+      <button type="button" class="close-btn close-float" data-close aria-label="Закрити">✕</button>
+      <span class="counter" id="pd-counter">1 / 1</span>
+      <div class="track" id="pd-track" tabindex="0" aria-label="Фото проєкту"></div>
+      <button type="button" class="nav-btn prev" id="pd-prev" aria-label="Попереднє фото">‹</button>
+      <button type="button" class="nav-btn next" id="pd-next" aria-label="Наступне фото">›</button>
+      <div class="thumbs" id="pd-thumbs"></div>
+    </div>
+    <div class="pd-info">
+      <div class="pd-top"><p class="eyebrow" id="pd-type"></p><button type="button" class="close-btn" data-close aria-label="Закрити">✕</button></div>
+      <h2 id="pd-title"></h2>
+      <div class="pd-price"><span class="price" id="pd-price"></span><span class="chip" id="pd-kit"></span></div>
+      <p class="pd-summary" id="pd-summary"></p>
+      <ol class="pd-notes" id="pd-notes" aria-label="На фото"></ol>
+      <p class="spec-title" data-i18n="spec">Специфікація</p>
+      <dl class="spec" id="pd-spec"></dl>
+      <div class="highlight"><b data-i18n="handy">Що зручно</b><p id="pd-highlight"></p></div>
+      <div class="pd-cta">
+        <button type="button" class="btn btn-ink" id="pd-calc" data-i18n="cta_similar">Розрахувати схожий проєкт</button>
+        <small data-i18n="price_note_short">Ціна — вартість цього проєкту на момент виконання.</small>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<dialog class="cd" id="calc" aria-labelledby="cd-title">
+  <div class="cd-inner">
+    <div class="cd-head"><h2 id="cd-title" data-i18n="form_t">Розрахувати вартість</h2><button type="button" class="close-btn" data-close aria-label="Закрити">✕</button></div>
+    <form id="calc-form" novalidate class="cd-inner" style="padding:0;overflow:visible">
+      <p class="sub" data-i18n="form_sub">Оберіть, що рахуємо, і залиште телефон. Відповімо й надішлемо орієнтовний розрахунок протягом 2 годин у робочий час.</p>
+      <p class="sub" id="calc-similar" hidden></p>
+      <div class="field">
+        <label for="calc-type" data-i18n="form_type">Що рахуємо</label>
+        <select id="calc-type" name="type"></select>
+      </div>
+      <div class="field" id="layout-field">
+        <label for="calc-layout" data-i18n="form_layout">Вигляд кухні</label>
+        <select id="calc-layout" name="layout"></select>
+      </div>
+      <div class="field">
+        <label for="calc-facade" data-i18n="form_facade">Фасади</label>
+        <select id="calc-facade" name="facade"></select>
+      </div>
+      <fieldset class="field">
+        <legend data-i18n="form_kit">Комплектація</legend>
+        <div class="radios">
+          <label class="radio"><input type="radio" name="kit" id="kit-base" value="base"><b data-i18n="kit_base_label">Базова комплектація</b><span data-i18n="kit_base_hint">Фурнітура Muller, GTV</span></label>
+          <label class="radio"><input type="radio" name="kit" id="kit-top" value="top"><b data-i18n="kit_top_label">Топова комплектація</b><span data-i18n="kit_top_hint">Фурнітура Blum, Hettich</span></label>
+          <label class="radio"><input type="radio" name="kit" id="kit-any" value="any" checked><b data-i18n="kit_any">Ще не знаю, підкажіть</b><span data-i18n="kit_any_hint">Порахуємо в обох варіантах</span></label>
+        </div>
+      </fieldset>
+      <div class="field">
+        <label for="calc-phone" data-i18n="form_phone">Ваш телефон</label>
+        <input type="tel" id="calc-phone" name="phone" inputmode="tel" autocomplete="tel" placeholder="0XX XXX XX XX">
+        <p class="err" id="phone-err" hidden data-i18n="form_err">Введіть номер у форматі 0XX XXX XX XX</p>
+      </div>
+      <div class="field">
+        <label for="calc-notes" data-i18n="form_notes">Додаткові побажання</label>
+        <textarea id="calc-notes" name="notes" rows="3" data-i18n-ph="form_notes_ph" placeholder="Наприклад: розміри приміщення, техніка, кольори"></textarea>
+      </div>
+      <button type="submit" class="btn btn-ink" data-i18n="form_submit">Надіслати в Telegram</button>
+      <p class="consent"><span data-i18n="form_consent">Натискаючи кнопку, Ви погоджуєтеся на обробку номера телефону для зв'язку щодо розрахунку.</span> <button type="button" class="linkish" id="open-privacy" data-i18n="priv_t">Політика конфіденційності</button></p>
+    </form>
+    <div id="calc-done" hidden class="cd-inner" style="padding:0;overflow:visible">
+      <p class="sub" data-i18n="done_sub">Заявку складено. Натисніть «Відкрити Telegram»: повідомлення вже буде в полі вводу, залишиться його надіслати.</p>
+      <div class="msg-box" id="calc-msg"></div>
+      <div class="done-actions">
+        <a class="btn btn-sand" id="send-tg" href="#" target="_blank" rel="noopener"><svg><use href="#i-tg"/></svg><span data-i18n="done_tg">Відкрити Telegram</span></a>
+        <a class="btn btn-ghost" id="send-viber" href="#"><svg><use href="#i-viber"/></svg><span data-i18n="done_viber">Відкрити Viber</span></a>
+        <button type="button" class="btn btn-ghost" id="copy-msg" data-i18n="done_copy">Скопіювати текст заявки</button>
+      </div>
+      <p class="mini"><span data-i18n="done_mini">Якщо месенджер не відкрився, скопіюйте текст і надішліть на номер</span> <b>098 521 71 03</b>.</p>
+      <button type="button" class="linkish" id="calc-back" data-i18n="done_back">Змінити заявку</button>
+    </div>
+  </div>
+</dialog>
+
+<div class="toast" id="toast" hidden></div>
+
+<script>
+(() => {
+const TG = '380985217103';
+const KIT_UK = {base:'Базова комплектація', top:'Топова комплектація'};
+const PROJECTS = [
+ {id:'kitchen-02', feature:true, price:215000, kit:'top', cover:'01',
+  photos:[
+   {f:'01', ar:1.5, n:[[12,62,'Мікрохвильовка в рамковому фасаді: виглядає як вбудована','Микроволновка в рамочном фасаде: выглядит как встроенная'],[58,8,'Шафи до стелі','Шкафы до потолка'],[76,80,'Відкривання профілем Gola','Открывание профилем Gola']]},
+   {f:'02', ar:.667, n:[[37,61,'Мийка в куті','Мойка в углу'],[22,26,'LED-підсвітка під шафами','LED-подсветка под шкафами']]},
+   {f:'03', ar:1.5, n:[[50,28,'Вбудована витяжка схована між шафами','Встроенная вытяжка спрятана между шкафами'],[72,50,'Стільниця й стінова панель в одному декорі','Столешница и стеновая панель в одном декоре']]},
+   {f:'04', ar:.667, n:[[58,30,'LED-підсвітка ніші','LED-подсветка ниши']]},
+   {f:'05', ar:.667, n:[[84,42,'Підсвітка у двох рівнях: під шафами й над ними','Подсветка в два уровня: под шкафами и над ними']]},
+   {f:'06', ar:.667, n:[[30,40,'Стільниця й стінова панель Egger «Дуб Галіфакс олово»','Столешница и стеновая панель Egger «Дуб Галифакс олово»']]},
+   {f:'07', ar:.667, n:[[40,52,'Сушка для посуду','Сушка для посуды'],[22,9,'Фасад піднімається вгору','Фасад поднимается вверх']]},
+   {f:'08', ar:.667, n:[[45,37,'Підйомний механізм Blum Aventos HK: фасад відкривається вгору й тримається в будь-якому положенні','Подъёмный механизм Blum Aventos HK: фасад открывается вверх и держится в любом положении']]},
+   {f:'09', ar:.667, n:[[55,42,'Шухляди Blum Tandembox з плавним закриванням','Ящики Blum Tandembox с плавным закрыванием']]},
+   {f:'10', ar:.667, n:[[50,62,'Вузьке карго Blum біля духовки','Узкое карго Blum у духовки']]}],
+  uk:{type:'Кухня', title:'Кухня до стелі: білий акрил і дуб',
+   summary:'Г-подібна кухня до стелі. Білі акрилові фасади, а середній ряд, стільниця і стінова панель в одному декорі дуба, тому робоча зона виглядає цілісно.',
+   specs:[['Корпуси тумб','ЛДСП Egger «Білий класичний»'],['Фасади','акрилові Luxeform, сніжно-білі'],['Середній ряд','корпуси й фасади ЛДСП Egger «Дуб Галіфакс олово»'],['Стільниця і стінова панель','Egger «Дуб Галіфакс олово»'],['Фурнітура','Blum: шухляди Tandembox, підйомники Aventos HK'],['Відкривання','профіль Gola'],['Підсвітка','LED у двох рівнях'],['Витяжка','вбудована']],
+   highlight:'Над мийкою шафа з сушкою для посуду і підйомним фасадом Blum: вимитий посуд одразу ставите в шафу, а відкритий фасад не заважає над головою.',
+   alt:'Г-подібна кухня до стелі з білими акриловими фасадами і середнім рядом під дуб'},
+  ru:{type:'Кухня', title:'Кухня до потолка: белый акрил и дуб',
+   summary:'Г-образная кухня до потолка. Белые акриловые фасады, а средний ряд, столешница и стеновая панель в одном декоре дуба, поэтому рабочая зона выглядит цельно.',
+   specs:[['Корпуса тумб','ЛДСП Egger «Белый классический»'],['Фасады','акриловые Luxeform, белоснежные'],['Средний ряд','корпуса и фасады ЛДСП Egger «Дуб Галифакс олово»'],['Столешница и стеновая панель','Egger «Дуб Галифакс олово»'],['Фурнитура','Blum: ящики Tandembox, подъёмники Aventos HK'],['Открывание','профиль Gola'],['Подсветка','LED в два уровня'],['Вытяжка','встроенная']],
+   highlight:'Над мойкой шкаф с сушкой для посуды и подъёмным фасадом Blum: вымытую посуду сразу ставите в шкаф, а открытый фасад не мешает над головой.'}},
+ {id:'kitchen-01', price:184000, kit:'top', cover:'01',
+  photos:[
+   {f:'01', ar:1.333, n:[[18,30,'Пенал «Гікорі натуральний»','Пенал «Гикори натуральный»'],[56,18,'Шафи до стелі','Шкафы до потолка']]},
+   {f:'02', ar:1.333, n:[[27,45,'Ніша під холодильник','Ниша под холодильник'],[82,42,'LED-підсвітка під верхніми шафами','LED-подсветка под верхними шкафами']]},
+   {f:'03', ar:1.333, n:[[78,72,'Профіль Gola по всій кухні','Профиль Gola по всей кухне'],[37,40,'Підсвітка робочої зони','Подсветка рабочей зоны']]},
+   {f:'04', ar:1.333, n:[[50,52,'Вбудована посудомийка за фасадом','Встроенная посудомойка за фасадом']]},
+   {f:'05', ar:1.333, n:[[52,40,'Сушка GTV у нижній шухляді','Сушка GTV в нижнем ящике'],[55,85,'Шухляди Blum Tandembox','Ящики Blum Tandembox']]},
+   {f:'06', ar:.75, n:[[63,60,'Вузьке карго Blum біля духовки','Узкое карго Blum у духовки'],[18,55,'Духовка вбудована під стільницю','Духовка встроена под столешницу']]}],
+  uk:{type:'Кухня', title:'Кухня до стелі: айворі й дерево',
+   summary:'Г-подібна кухня до стелі. Фасади айворі з профілем Gola, пенал у теплому дереві з нішею під холодильник.',
+   specs:[['Корпуси','ЛДСП Egger, білий'],['Фасади','Luxeform, колір Ivory'],['Пенал','ЛДСП Egger «Гікорі натуральний»'],['Стільниця','HPL Egger'],['Фурнітура','Blum: шухляди Tandembox, карго'],['Відкривання','профіль Gola по всій кухні'],['Підсвітка','LED під верхніми шафами'],['Техніка','вбудовані посудомийка й духовка']],
+   highlight:'Сушка для посуду GTV у нижній висувній шухляді: тарілки стоять у шухляді, а стільниця лишається вільною.',
+   alt:"Г-подібна кухня до стелі з фасадами айворі і дерев'яним пеналом"},
+  ru:{type:'Кухня', title:'Кухня до потолка: айвори и дерево',
+   summary:'Г-образная кухня до потолка. Фасады айвори с профилем Gola, пенал в тёплом дереве с нишей под холодильник.',
+   specs:[['Корпуса','ЛДСП Egger, белый'],['Фасады','Luxeform, цвет Ivory'],['Пенал','ЛДСП Egger «Гикори натуральный»'],['Столешница','HPL Egger'],['Фурнитура','Blum: ящики Tandembox, карго'],['Открывание','профиль Gola по всей кухне'],['Подсветка','LED под верхними шкафами'],['Техника','встроенные посудомойка и духовка']],
+   highlight:'Сушка для посуды GTV в нижнем выдвижном ящике: тарелки стоят в ящике, а столешница остаётся свободной.'}},
+ {id:'kitchen-03', price:118000, kit:'base', cover:'02',
+  photos:[
+   {f:'02', ar:1.333, n:[[72,66,'Мийка під вікном','Мойка под окном',66,58],[46,55,'Стільниця й стінова панель «Мармур Кришталь»','Столешница и стеновая панель «Мрамор Кристалл»',36,44],[60,93,'Компактна посудомийка й сушка GTV у тумбі під мийкою','Компактная посудомойка и сушка GTV в тумбе под мойкой',53,84],[34,86,'Карго 250 мм біля духовки','Карго 250 мм у духовки',42,97]]},
+   {f:'01', ar:1.333, n:[[82,20,'Верхні шафи до стелі «Дикий дуб натуральний»','Верхние шкафы до потолка «Дикий дуб натуральный»'],[80,78,'Нижні фасади МДФ Yildiz, матові','Нижние фасады МДФ Yildiz, матовые']]},
+   {f:'03', ar:.692, n:[[20,40,'Ніша в пеналі під холодильник','Ниша в пенале под холодильник']]}],
+  uk:{type:'Кухня', title:'Кухня з мармуровою стільницею',
+   summary:'Кутова кухня в невеликому приміщенні: верхні шафи до стелі під дуб, світлі матові фасади внизу, стільниця і стінова панель під мармур. Холодильник стоїть у ніші пенала, тож уся стіна виглядає як одні меблі, а котел зліва схований у шафі.',
+   specs:[['Верхні шафи і пенал','ЛДСП Egger «Дикий дуб натуральний»'],['Корпуси нижніх тумб','ЛДСП Egger «Білий класичний»'],['Нижні фасади','МДФ Yildiz Superior Matt, колір «Мозамбік»'],['Стільниця і стінова панель','Egger «Мармур Кришталь»'],['Фурнітура','GTV'],['Відкривання','профіль Gola'],['Підсвітка','LED під верхніми шафами'],['Карго','250 мм біля духовки'],['Техніка','компактна посудомийна машина']],
+   highlight:'Сушка для посуду GTV у нижній тумбі, а над нею компактна посудомийка: тарілки ховаються під стільницею, а над мийкою лишається вікно і світло.',
+   alt:'Кутова кухня: мийка біля вікна, стільниця і стінова панель під мармур'},
+  ru:{type:'Кухня', title:'Кухня с мраморной столешницей',
+   summary:'Угловая кухня в небольшом помещении: верхние шкафы до потолка под дуб, светлые матовые фасады внизу, столешница и стеновая панель под мрамор. Холодильник стоит в нише пенала, поэтому вся стена выглядит как единая мебель, а котёл слева спрятан в шкаф.',
+   specs:[['Верхние шкафы и пенал','ЛДСП Egger «Дуб дикий натуральный»'],['Корпуса нижних тумб','ЛДСП Egger «Белый классический»'],['Нижние фасады','МДФ Yildiz Superior Matt, цвет «Мозамбик»'],['Столешница и стеновая панель','Egger «Мрамор Кристалл»'],['Фурнитура','GTV'],['Открывание','профиль Gola'],['Подсветка','LED под верхними шкафами'],['Карго','250 мм у духовки'],['Техника','компактная посудомоечная машина']],
+   highlight:'Сушка для посуды GTV в нижней тумбе, а над ней компактная посудомойка: тарелки прячутся под столешницей, а над мойкой остаётся окно и свет.'}},
+ {id:'wardrobe-01', price:53000, kit:'top', cover:'01',
+  photos:[
+   {f:'01', ar:1.333, n:[[58,12,'Від підлоги до стелі','От пола до потолка'],[66,70,'Врізні ручки Viefe Hexxa','Врезные ручки Viefe Hexxa']]},
+   {f:'02', ar:1.333, n:[[28,55,'Відділення під довгий одяг, 1500 мм','Отделение под длинную одежду, 1500 мм'],[70,27,'Антресолі під сезонні речі','Антресоли под сезонные вещи'],[45,82,'Шухляди на напрямних Blum Tandem','Ящики на направляющих Blum Tandem'],[92,57,'Петлі Blum Clip top з доводчиками: двері зачиняються тихо й плавно','Петли Blum Clip top с доводчиками: двери закрываются тихо и плавно',86,92]]},
+   {f:'03', ar:.75, n:[[60,40,'Ручка врізана у фасад: не виступає й не чіпляється','Ручка врезана в фасад: не выступает и не цепляется']]}],
+  uk:{type:'Шафа', title:'Сімейна шафа до стелі',
+   summary:'Велика шафа на всю стіну, від підлоги до стелі. Зовні гладкі білі фасади з довгими чорними ручками, всередині місце для речей усієї сім’ї.',
+   specs:[['Корпус і фасади','ЛДСП Egger «Білий класичний»'],['Петлі','Blum Clip top з доводчиками'],['Напрямні шухляд','Blum Tandem'],['Ручки','врізні Viefe Hexxa, чорні матові'],['Двері','розпашні'],['Всередині','відділення під довгий одяг 1500 мм, штанги, полиці, чотири шухляди, антресолі']],
+   highlight:'Врізні ручки Viefe Hexxa: тонка чорна лінія на білому фасаді виглядає акуратніше за звичайні ручки і ні за що не чіпляється.',
+   alt:'Біла шафа на всю стіну від підлоги до стелі з довгими чорними врізними ручками'},
+  ru:{type:'Шкаф', title:'Семейный шкаф до потолка',
+   summary:'Большой шкаф во всю стену, от пола до потолка. Снаружи гладкие белые фасады с длинными чёрными ручками, внутри место для вещей всей семьи.',
+   specs:[['Корпус и фасады','ЛДСП Egger «Белый классический»'],['Петли','Blum Clip top с доводчиками'],['Направляющие ящиков','Blum Tandem'],['Ручки','врезные Viefe Hexxa, чёрные матовые'],['Двери','распашные'],['Внутри','отделение под длинную одежду 1500 мм, штанги, полки, четыре ящика, антресоли']],
+   highlight:'Врезные ручки Viefe Hexxa: тонкая чёрная линия на белом фасаде выглядит аккуратнее обычных ручек и ни за что не цепляется.'}},
+ {id:'bedroom-01', price:20500, kit:'top', cover:'01',
+  photos:[
+   {f:'01', ar:.562, n:[[56,40,'Дзеркало з LED-підсвіткою по контуру','Зеркало с LED-подсветкой по контуру'],[52,64,'Столик із висувною шухлядою на фурнітурі Blum','Столик с выдвижным ящиком на фурнитуре Blum']]},
+   {f:'video', ar:.5625, n:[]}],
+  uk:{type:'Спальня', title:'Косметичний столик, дзеркало і приліжкові тумби',
+   summary:'Меблі для спальні в теплому дереві: косметичний столик, приліжкові тумби і кругле дзеркало з м’яким світлом по контуру.',
+   specs:[['Матеріал','ЛДСП Egger «Дуб Казелла натуральний»'],['Фурнітура','Blum'],['Дзеркало','з LED-підсвіткою по контуру'],['Вмикання підсвітки','прихований датчик'],['У вартість входять','косметичний столик із шухлядою, дві приліжкові тумби, дзеркало з підсвіткою']],
+   highlight:'Підсвітка дзеркала дає рівне м’яке світло на обличчя, тому столиком зручно користуватися і ввечері, без верхнього світла.',
+   alt:'Косметичний столик у спальні, кругле дзеркало з LED-підсвіткою'},
+  ru:{type:'Спальня', title:'Косметический столик, зеркало и прикроватные тумбы',
+   summary:'Мебель для спальни в тёплом дереве: косметический столик, прикроватные тумбы и круглое зеркало с мягким светом по контуру.',
+   specs:[['Материал','ЛДСП Egger «Дуб Казелла натуральный»'],['Фурнитура','Blum'],['Зеркало','с LED-подсветкой по контуру'],['Включение подсветки','скрытый датчик'],['В стоимость входят','косметический столик с ящиком, две прикроватные тумбы, зеркало с подсветкой']],
+   highlight:'Подсветка зеркала даёт ровный мягкий свет на лицо, поэтому столиком удобно пользоваться и вечером, без верхнего света.'}}
+];
+
+const LAYOUTS = {
+  uk:['Пряма кухня','Г-подібна кухня','П-подібна кухня','Пряма кухня з островом','Ще не знаю'],
+  ru:['Прямая кухня','Г-образная кухня','П-образная кухня','Прямая кухня с островом','Пока не знаю']
+};
+const FACADES = {
+  uk:['ЛДСП','Плитні фасадні матеріали','Фарбований МДФ','Плівковий МДФ','Ще не знаю, підкажіть'],
+  ru:['ЛДСП','Плитные фасадные материалы','Крашеный МДФ','Плёночный МДФ','Пока не знаю, подскажите']
+};
+const PROJECT_LAYOUT = {'kitchen-01':1,'kitchen-02':1,'kitchen-03':1};
+const TYPES = {
+  uk:['Кухня','Шафа','Комод','Гардероб','Дитяча','Комплексне меблювання'],
+  ru:['Кухня','Шкаф','Комод','Гардероб','Детская','Комплексная меблировка']
+};
+const PROJECT_TYPE_INDEX = {'kitchen-01':0,'kitchen-02':0,'kitchen-03':0,'wardrobe-01':1,'bedroom-01':5};
+
+const RU = {
+ intro_h1:'Изготавливаем корпусную мебель на заказ под все Ваши потребности', intro_contacts:'Контакты', intro_call:'Позвонить',
+ intro_hint:'Листайте, чтобы увидеть, как чертёж становится кухней', intro_works:'Наши работы',
+ intro_final_alt:'Готовая кухня: белые шкафы до потолка, тёмная столешница под камень, холодильник справа',
+ dw_title:'Чертёж кухни: общий вид стены с окном, размеры в миллиметрах',
+ lg1:'Шкафы до потолка: на антресолях место для сезонных вещей', lg2:'Котёл спрятали в шкаф, доступ к нему остался',
+ lg3:'Столешница и стеновая панель под камень', lg4:'Мойка под окном, чтобы возле неё было удобно стоять',
+ lg5:'Подсветка рабочей зоны под шкафами', lg6:'Ящики вместо полок в нижнем ряду',
+ st_obj:'Объект', st_obj_v:'Кухня П-образная', st_view:'Вид', st_view_v:'Стена с окном', st_stage:'Стадия', st_stage_v:'Эскизный проект', st_dims:'Размеры', st_dims_v:'мм, ориентировочные',
+ nav_projects:'Работы', nav_materials:'Материалы', nav_process:'Как работаем', nav_reviews:'Отзывы', nav_contacts:'Контакты',
+ cta_calc:'Рассчитать стоимость', cta_calc_short:'Рассчитать', cta_tg:'Написать в Telegram',
+ hero_eyebrow:'Мебель на заказ · Днепр и Самар',
+ hero_h1:'Кухни, шкафы, гардеробные и другая корпусная мебель',
+ hero_lead:'Считаем в двух вариантах комплектации, показываем 3D-проект, изготавливаем и устанавливаем под ключ.',
+ fact_years:'лет делаем мебель', fact_projects:'реализованных проектов', fact_kits:'варианта комплектации',
+ hero_alt:'Кухня до потолка с белыми акриловыми фасадами и средним рядом под дуб', hero_cap:'Кухня, 215 000 грн',
+ p1_t:'Размеры под Ваше пространство', p1_d:'Учитываем каждый сантиметр: мебель до потолка, от стены до стены, с местом под Вашу технику.',
+ p2_t:'Менеджер, ответственный за проект', p2_d:'От первого сообщения до монтажа с Вами на связи один человек, который знает Ваш проект.',
+ p3_t:'Проверенные материалы', p3_d:'Плиты Egger, Swisspan, Kronospan. Фурнитура Blum, Hettich, GTV, Muller на выбор.',
+ proj_eyebrow:'Каталог', proj_h:'Наши реализованные проекты', proj_p:'Цвет и стиль выбирали клиенты, а мы советовали, как всё разместить, чтобы было удобно. Нажмите, чтобы узнать больше.',
+ proj_note:'Цена — стоимость конкретного проекта на момент выполнения. Стоимость Вашей мебели рассчитаем по Вашим размерам и материалам.',
+ det_eyebrow:'Детали', det_h:'Что мы продумываем за Вас', det_p:'Цвет и стиль выбираете Вы. Мы советуем, как разместить технику, мойку, полки и ящики, чтобы мебелью было удобно пользоваться каждый день.',
+ d1_t:'Сушка над мойкой', d1_d:'Вымытая посуда сразу в шкаф. Фасад поднимается вверх и не мешает над головой.', d1_alt:'Шкаф с сушкой для посуды над мойкой, фасад поднят',
+ d2_t:'Узкое карго у духовки', d2_d:'Узкое пространство между техникой становится местом для масла, специй и бутылок.', d2_alt:'Узкое выдвижное карго Blum у духового шкафа',
+ d3_t:'Наполнение шкафа под Ваши вещи', d3_d:'Штанги на разной высоте, полки и ящики. Считаем так, чтобы поместилась и длинная куртка.', d3_alt:'Шкаф с открытыми дверями: штанги, полки, ящики',
+ d4_t:'Свет на рабочей зоне', d4_d:'LED-подсветка под шкафами светит на столешницу, а не в глаза.', d4_alt:'LED-подсветка в два уровня над рабочей зоной',
+ mat_eyebrow:'Материалы и фурнитура', mat_h:'Две комплектации под Ваш бюджет',
+ mat_p:'Комплектации отличаются фурнитурой: петлями, направляющими ящиков, подъёмными механизмами. Каждый расчёт делаем в обоих вариантах, чтобы Вы видели разницу в цене.',
+ kit_base_label:'Базовая комплектация', kit_top_label:'Топовая комплектация',
+ kit_base_d:'Фурнитура среднего сегмента для ежедневного использования. Подходит, когда важно уложиться в бюджет.',
+ kit_top_d:'Австрийская и немецкая фурнитура премиум-сегмента с плавным ходом и тихим закрыванием.',
+ m1_t:'Плиты и фасады', m2_t:'Столешницы', m2_d:'HPL и ЛДСП: Egger · Fundermax · Arpa', m3_t:'Фурнитура', m4_t:'Открывание', m4_d:'Профиль Gola без ручек, врезные или накладные ручки, открывание от нажатия',
+ proc_eyebrow:'Как работаем', proc_h:'От фото помещения до монтажа',
+ s1_t:'Заявка', s1_d:'Напишите, что нужно, и пришлите фото помещения с примерными размерами или картинку, которая нравится.',
+ s2_t:'Предварительный расчёт', s2_d:'Считаем в двух вариантах комплектации, чтобы Вы видели разницу в цене.',
+ s3_t:'Эскиз или 3D-визуализация', s3_d:'Показываем, как будет выглядеть мебель, и вносим правки.',
+ s4_t:'Замер', s4_d:'Замеряем помещение и на месте обсуждаем конструкцию и размещение техники.',
+ s5_t:'Материалы и договор', s5_d:'Вместе выбираем материалы и фиксируем окончательную стоимость в договоре.',
+ s6_t:'Изготовление', s6_d:'Ориентировочно кухня — около 1,5 месяца, шкаф — около 3 недель.',
+ s7_t:'Доставка и монтаж', s7_d:'Привозим, собираем, устанавливаем и донастраиваем фасады и механизмы.',
+ rev_eyebrow:'Отзывы', rev_h:'Что пишут клиенты', rev_p:'Цитаты из переписки с клиентами (на языке оригинала).',
+ q1:'Клиент, которому мы делали кухню, порекомендовал нас коллеге', q2:'Клиент вернулся через полтора года · прихожая', q3:'Клиент о 3D-визуализации', q4:'Клиент о конструкции кухни',
+ rev_more:'Ещё отзывы — в Instagram @dimmebli, в разделе «Відгуки»',
+ about_eyebrow:'О компании', about_h:'DIMMebli',
+ about_p1:'Делаем корпусную мебель на заказ с 2018 года. За это время — около 200 проектов: кухни, шкафы, гардеробные, прихожие, мебель для санузла.',
+ about_p2:'Цвет и стиль выбираете Вы. Мы отвечаем за то, чтобы мебелью было удобно пользоваться: где стоит техника, на какой высоте полки, что выдвигается и как открывается.',
+ about_p3:'От первого сообщения до монтажа с Вами на связи один человек, который знает Ваш проект. Не нужно объяснять всё заново разным менеджерам.',
+ about_alt:'Выдвижные ящики Blum в белой кухне',
+ faq_eyebrow:'Вопросы', faq_h:'Частые вопросы',
+ f1_q:'Как узнать стоимость?', f1_a:'Напишите, что нужно, и пришлите фото помещения с размерами или картинку, которая нравится. Рассчитаем в двух вариантах комплектации. Окончательную стоимость фиксируем после замера и выбора материалов.',
+ f2_q:'Нужен ли дизайн-проект?', f2_a:'Нет. Достаточно фото или картинки, которая нравится. Эскиз или 3D-визуализацию сделаем сами.',
+ f3_q:'Консультируете по планировке?', f3_a:'Да. Подскажем, где поставить технику и мойку, сколько сделать ящиков и полок, чтобы кухней или шкафом было удобно пользоваться.',
+ f4_q:'Сколько времени занимает изготовление?', f4_a:'Ориентировочно кухня — около 1,5 месяца, шкаф — около 3 недель после подписания договора. Точный срок называем после выбора материалов.',
+ f5_q:'Можно ли согласовать всё дистанционно?', f5_a:'Расчёт, эскиз и правки — да, в Telegram или Viber. Замер делаем на месте.',
+ c_eyebrow:'Контакты', c_h:'Рассчитаем Вашу мебель', c_lead:'Пришлите фото и размеры помещения или картинку, которая нравится. Ответим и пришлём ориентировочный расчёт в течение 2 часов в рабочее время.',
+ c_phone:'Телефон', c_where:'Где работаем', c_where_d:'Днепр и Самар', copy:'Скопировать',
+ priv_t:'Политика конфиденциальности', priv_d:'Страница не сохраняет Ваши данные. Номер телефона из формы попадает только в сообщение, которое Вы сами отправляете нам в Telegram или Viber. Мы используем его только, чтобы связаться с Вами по поводу расчёта.',
+ spec:'Спецификация', handy:'Что удобно', cta_similar:'Рассчитать похожий проект', price_note_short:'Цена — стоимость этого проекта на момент выполнения.',
+ form_t:'Рассчитать стоимость', form_sub:'Выберите, что считаем, и оставьте телефон. Ответим и пришлём ориентировочный расчёт в течение 2 часов в рабочее время.', form_layout:'Вид кухни', form_facade:'Фасады', form_notes:'Дополнительные пожелания', form_notes_ph:'Например: размеры помещения, техника, цвета', sheet_alt:'Проект кухни: перспективный вид, план и развёртки стен с размерами',
+ form_type:'Что считаем', form_kit:'Комплектация', kit_base_hint:'Фурнитура Muller, GTV', kit_top_hint:'Фурнитура Blum, Hettich', kit_any:'Пока не знаю, подскажите', kit_any_hint:'Рассчитаем в обоих вариантах',
+ form_phone:'Ваш телефон', form_err:'Введите номер в формате 0XX XXX XX XX', form_submit:'Отправить в Telegram',
+ form_consent:'Нажимая кнопку, Вы соглашаетесь на обработку номера телефона для связи по поводу расчёта.',
+ done_sub:'Заявка составлена. Нажмите «Открыть Telegram»: сообщение уже будет в поле ввода, останется его отправить.',
+ done_tg:'Открыть Telegram', done_viber:'Открыть Viber', done_copy:'Скопировать текст заявки',
+ done_mini:'Если мессенджер не открылся, скопируйте текст и отправьте на номер', done_back:'Изменить заявку',
+ more:'Подробнее', photos:'фото', copied:'Скопировано', similar:'Похожий проект:'
+};
+const UK_EXTRA = {more:'Детальніше', photos:'фото', copied:'Скопійовано', similar:'Схожий проєкт:'};
+
+let lang = 'uk';
+const UK = {};
+document.querySelectorAll('[data-i18n]').forEach(el => { UK[el.dataset.i18n] = el.textContent; });
+document.querySelectorAll('[data-i18n-html]').forEach(el => { UK[el.dataset.i18nHtml] = el.innerHTML; });
+document.querySelectorAll('[data-i18n-alt]').forEach(el => { UK[el.dataset.i18nAlt] = el.alt; });
+document.querySelectorAll('[data-i18n-ph]').forEach(el => { UK[el.dataset.i18nPh] = el.placeholder; });
+Object.assign(UK, UK_EXTRA);
+const t = k => (lang === 'ru' ? RU[k] : UK[k]) ?? UK[k] ?? k;
+const fmt = n => n.toLocaleString('uk-UA').replace(/\s/g,' ') + ' грн';
+const kitName = (k, l=lang) => l === 'ru' ? RU[k==='base'?'kit_base_label':'kit_top_label'] : UK[k==='base'?'kit_base_label':'kit_top_label'];
+
+function applyLang(next){
+  lang = next;
+  document.documentElement.lang = lang === 'ru' ? 'ru' : 'uk';
+  document.querySelectorAll('[data-i18n]').forEach(el => { el.textContent = t(el.dataset.i18n); });
+  document.querySelectorAll('[data-i18n-html]').forEach(el => { el.innerHTML = t(el.dataset.i18nHtml); });
+  document.querySelectorAll('[data-i18n-alt]').forEach(el => { el.alt = t(el.dataset.i18nAlt); });
+  document.querySelectorAll('[data-i18n-ph]').forEach(el => { el.placeholder = t(el.dataset.i18nPh); });
+  document.querySelectorAll('.lang button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
+  renderCatalog(); fillTypes();
+  if (current) renderProject(current, currentIndex());
+  try { localStorage.setItem('dim-lang', lang); } catch(e) {}
+}
+document.querySelectorAll('.lang button').forEach(b => b.addEventListener('click', () => applyLang(b.dataset.lang)));
+
+/* catalog */
+const catalog = document.getElementById('catalog');
+function renderCatalog(){
+  catalog.innerHTML = '';
+  PROJECTS.forEach(p => {
+    const d = p[lang];
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'card' + (p.feature ? ' feature' : '');
+    b.setAttribute('aria-label', d.title + ', ' + fmt(p.price));
+    const n = p.photos.filter(x => x.f !== 'video').length + (p.photos.some(x => x.f === 'video') ? 1 : 0);
+    b.innerHTML = `<div class="card-img"><img src="img/${p.id}/${p.cover}-s.jpg" alt="${p.uk.alt}" loading="lazy" decoding="async"><span class="card-count">${n} ${t('photos')}</span></div>
+      <div class="card-body"><div class="card-meta"><span>${d.type}</span><span class="chip ${p.kit==='top'?'top':''}">${kitName(p.kit)}</span></div>
+      <h3>${d.title}</h3><div class="card-foot"><span class="price">${fmt(p.price)}</span><span class="more">${t('more')} →</span></div></div>`;
+    b.addEventListener('click', () => openProject(p.id));
+    catalog.appendChild(b);
+  });
+}
+
+/* project dialog */
+const pd = document.getElementById('project');
+const track = document.getElementById('pd-track');
+const thumbs = document.getElementById('pd-thumbs');
+let current = null;
+const currentIndex = () => track.clientWidth ? Math.round(track.scrollLeft / track.clientWidth) : 0;
+function renderProject(id, startAt=0){
+  const p = PROJECTS.find(x => x.id === id); if (!p) return;
+  current = id;
+  const d = p[lang];
+  document.getElementById('pd-type').textContent = d.type;
+  document.getElementById('pd-title').textContent = d.title;
+  document.getElementById('pd-price').textContent = fmt(p.price);
+  const kit = document.getElementById('pd-kit');
+  kit.textContent = kitName(p.kit) + (p.kit==='top' ? ' · Blum' : ' · GTV');
+  kit.className = 'chip' + (p.kit==='top' ? ' top' : '');
+  document.getElementById('pd-summary').textContent = d.summary;
+  document.getElementById('pd-highlight').textContent = d.highlight;
+  const spec = document.getElementById('pd-spec'); spec.innerHTML = '';
+  d.specs.forEach(([k,v]) => { const row = document.createElement('div'); row.innerHTML = `<dt></dt><dd></dd>`; row.firstChild.textContent = k; row.lastChild.textContent = v; spec.appendChild(row); });
+  track.innerHTML = ''; thumbs.innerHTML = '';
+  p.photos.forEach((ph, i) => {
+    const slide = document.createElement('div'); slide.className = 'slide';
+    const box = document.createElement('div'); box.className = 'ph'; box.dataset.ar = ph.ar;
+    if (ph.f === 'video') {
+      box.innerHTML = `<video src="img/${p.id}/video.mp4" poster="img/${p.id}/video-poster.jpg" muted loop playsinline autoplay preload="none" aria-label="${d.title}"></video>`;
+    } else {
+      box.innerHTML = `<img src="img/${p.id}/${ph.f}.jpg" alt="${i===0 ? p.uk.alt : d.title + ', фото ' + (i+1)}" decoding="async" ${i>1?'loading="lazy"':''}>`;
+      if (ph.n.length){
+        let svg = '<svg class="leads" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">';
+        const used = [];
+        ph.n.forEach((c, k) => {
+          const [x, y] = c; let right = x < 55;
+          let lx = right ? Math.min(x + 9, 97) : Math.max(x - 9, 3);
+          let ly = Math.min(Math.max(y - 8, 6), 94);
+          if (c[4] != null) { lx = c[4]; ly = c[5]; right = lx >= x; }
+          else while (used.some(u => Math.abs(u - ly) < 9)) ly = ly + 9 > 94 ? ly - 18 : ly + 9;
+          used.push(ly);
+          svg += `<line x1="${x}" y1="${y}" x2="${lx}" y2="${ly}"/>`;
+          const lab = document.createElement('span'); lab.className = 'co-label ' + (right ? 'r' : 'l');
+          lab.style.left = lx + '%'; lab.style.top = ly + '%'; lab.textContent = c[lang === 'ru' ? 3 : 2];
+          box.appendChild(lab);
+          const dot = document.createElement('button'); dot.type = 'button'; dot.className = 'co-dot';
+          dot.style.left = x + '%'; dot.style.top = y + '%'; dot.textContent = k + 1;
+          dot.setAttribute('aria-label', c[lang === 'ru' ? 3 : 2]);
+          dot.addEventListener('click', () => { const li = document.querySelector(`#pd-notes li:nth-child(${k+1})`); if (li){ document.querySelectorAll('#pd-notes li').forEach(x => x.classList.remove('on')); li.classList.add('on'); li.scrollIntoView({block:'nearest'}); } });
+          box.appendChild(dot);
+        });
+        box.insertAdjacentHTML('afterbegin', svg + '</svg>');
+      }
+    }
+    slide.appendChild(box);
+    track.appendChild(slide);
+    const tb = document.createElement('button'); tb.type = 'button';
+    tb.setAttribute('aria-label', (i+1) + ' / ' + p.photos.length);
+    tb.innerHTML = `<img src="img/${p.id}/${ph.f==='video'?'video-poster':ph.f+'-s'}.jpg" alt="" loading="lazy">`;
+    tb.addEventListener('click', () => go(i));
+    thumbs.appendChild(tb);
+  });
+  fitPhotos();
+  requestAnimationFrame(() => { track.scrollTo({left: startAt * track.clientWidth, behavior:'instant'}); updateCounter(); });
+}
+function fitPhotos(){
+  track.querySelectorAll('.ph').forEach(box => {
+    const sw = track.clientWidth, sh = track.clientHeight, ar = +box.dataset.ar;
+    if (!sw || !sh) return;
+    let w = sw, h = sw / ar; if (h > sh){ h = sh; w = sh * ar; }
+    box.style.width = Math.floor(w) + 'px'; box.style.height = Math.floor(h) + 'px';
+  });
+}
+addEventListener('resize', () => { if (current) fitPhotos(); });
+function renderNotes(i){
+  const p = PROJECTS.find(x => x.id === current); const ol = document.getElementById('pd-notes');
+  if (!p || !ol) return;
+  const ph = p.photos[i]; const list = ph && ph.n ? ph.n : [];
+  ol.innerHTML = list.map((c,k) => `<li><b>${k+1}</b><span></span></li>`).join('');
+  [...ol.children].forEach((li,k) => li.lastChild.textContent = list[k][lang === 'ru' ? 3 : 2]);
+  ol.hidden = !list.length;
+}
+function updateCounter(){
+  const n = track.children.length, i = Math.min(currentIndex(), n-1);
+  document.getElementById('pd-counter').textContent = (i+1) + ' / ' + n;
+  document.getElementById('pd-prev').disabled = i <= 0;
+  document.getElementById('pd-next').disabled = i >= n-1;
+  [...thumbs.children].forEach((b,j) => b.setAttribute('aria-current', String(j===i)));
+  renderNotes(i);
+  const active = thumbs.children[i]; if (active) active.scrollIntoView({block:'nearest', inline:'nearest'});
+}
+function go(i){ track.scrollTo({left: i * track.clientWidth, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'}); }
+track.addEventListener('scroll', () => { clearTimeout(track._t); track._t = setTimeout(updateCounter, 60); });
+document.getElementById('pd-prev').addEventListener('click', () => go(currentIndex()-1));
+document.getElementById('pd-next').addEventListener('click', () => go(currentIndex()+1));
+track.addEventListener('keydown', e => { if (e.key==='ArrowRight') go(currentIndex()+1); if (e.key==='ArrowLeft') go(currentIndex()-1); });
+function lockScroll(on){ document.documentElement.style.overflow = on ? 'hidden' : ''; }
+function openProject(id){ renderProject(id, 0); pd.showModal(); lockScroll(true); requestAnimationFrame(fitPhotos); }
+pd.addEventListener('close', () => { current = null; track.innerHTML=''; if (!cd.open) lockScroll(false); });
+document.getElementById('pd-calc').addEventListener('click', () => { const id = current; openCalc(id); });
+
+/* calc dialog */
+const cd = document.getElementById('calc');
+const form = document.getElementById('calc-form');
+const done = document.getElementById('calc-done');
+const typeSel = document.getElementById('calc-type');
+let similarId = null;
+const layoutSel = document.getElementById('calc-layout'), facadeSel = document.getElementById('calc-facade'), layoutField = document.getElementById('layout-field');
+function fillSel(sel, list, def=0){ const v = sel.selectedIndex < 0 ? def : sel.selectedIndex; sel.innerHTML = list.map((x,i) => `<option value="${i}">${x}</option>`).join(''); sel.selectedIndex = v; }
+function syncLayout(){ const ti = typeSel.selectedIndex; layoutField.hidden = !(ti === 0 || ti === 5); }
+typeSel.addEventListener('change', syncLayout);
+function fillTypes(){
+  fillSel(typeSel, TYPES[lang]); fillSel(layoutSel, LAYOUTS[lang], 4); fillSel(facadeSel, FACADES[lang], 4);
+  syncLayout();
+  const sim = document.getElementById('calc-similar');
+  if (similarId){ const p = PROJECTS.find(x=>x.id===similarId); sim.textContent = t('similar') + ' ' + p[lang].title + ', ' + fmt(p.price); sim.hidden = false; }
+  else sim.hidden = true;
+}
+function openCalc(fromId=null){
+  similarId = fromId;
+  form.hidden = false; done.hidden = true;
+  if (fromId){ typeSel.selectedIndex = PROJECT_TYPE_INDEX[fromId] ?? 0; if (PROJECT_LAYOUT[fromId] != null) layoutSel.selectedIndex = PROJECT_LAYOUT[fromId]; const p = PROJECTS.find(x=>x.id===fromId); document.getElementById(p.kit==='base'?'kit-base':'kit-top').checked = true; }
+  fillTypes();
+  if (pd.open) pd.close();
+  cd.showModal(); lockScroll(true);
+}
+document.querySelectorAll('[data-calc]').forEach(b => b.addEventListener('click', () => openCalc(null)));
+cd.addEventListener('close', () => lockScroll(false));
+document.querySelectorAll('[data-close]').forEach(b => b.addEventListener('click', () => b.closest('dialog').close()));
+[pd, cd].forEach(dlg => dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); }));
+
+function normPhone(raw){
+  const d = raw.replace(/\D/g,'');
+  if (d.length === 10 && d[0] === '0') return '+38' + d;
+  if (d.length === 12 && d.startsWith('380')) return '+' + d;
+  return null;
+}
+function prettyPhone(p){ const d = p.slice(3); return `${d.slice(0,3)} ${d.slice(3,6)} ${d.slice(6,8)} ${d.slice(8)}`; }
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  const phone = normPhone(document.getElementById('calc-phone').value);
+  const err = document.getElementById('phone-err');
+  if (!phone){ err.hidden = false; document.getElementById('calc-phone').focus(); return; }
+  err.hidden = true;
+  const kitVal = form.querySelector('input[name=kit]:checked').value;
+  /* the message goes to the owner, so it is always in Ukrainian */
+  const kitText = kitVal === 'base' ? 'Базова (Muller, GTV)' : kitVal === 'top' ? 'Топова (Blum, Hettich)' : 'ще не знаю, порахуйте обидва варіанти';
+  const lines = ['Добрий день! Заявка з сайту DIMMebli.', 'Що рахуємо: ' + TYPES.uk[typeSel.selectedIndex]];
+  if (!layoutField.hidden) lines.push('Вигляд кухні: ' + LAYOUTS.uk[layoutSel.selectedIndex]);
+  lines.push('Фасади: ' + FACADES.uk[facadeSel.selectedIndex], 'Комплектація: ' + kitText);
+  if (similarId){ const p = PROJECTS.find(x=>x.id===similarId); lines.push('Схожий проєкт: ' + p.uk.title + ' (' + fmt(p.price).replace(/ /g,' ') + ')'); }
+  lines.push('Телефон: ' + prettyPhone(phone));
+  const notes = document.getElementById('calc-notes').value.trim(); if (notes) lines.push('Побажання: ' + notes);
+  if (lang === 'ru') lines.push('Мова спілкування: російська');
+  const msg = lines.join('\n');
+  document.getElementById('calc-msg').textContent = msg;
+  document.getElementById('send-tg').href = `https://t.me/+${TG}?text=${encodeURIComponent(msg)}`;
+  document.getElementById('send-viber').href = `viber://chat?number=%2B${TG}&draft=${encodeURIComponent(msg)}`;
+  form.hidden = true; done.hidden = false;
+});
+document.getElementById('calc-back').addEventListener('click', () => { form.hidden = false; done.hidden = true; });
+document.getElementById('open-privacy').addEventListener('click', () => { cd.close(); const pr = document.getElementById('privacy'); pr.open = true; pr.scrollIntoView({block:'center'}); });
+
+/* copy */
+const toast = document.getElementById('toast');
+function showToast(text){ toast.textContent = text; toast.hidden = false; clearTimeout(toast._t); toast._t = setTimeout(() => toast.hidden = true, 1800); }
+async function copyText(text, fallbackEl){
+  try { await navigator.clipboard.writeText(text); showToast(t('copied')); }
+  catch(e){ if (fallbackEl){ const r = document.createRange(); r.selectNodeContents(fallbackEl); const s = getSelection(); s.removeAllRanges(); s.addRange(r); } }
+}
+document.querySelectorAll('[data-copy]').forEach(b => b.addEventListener('click', () => copyText(b.dataset.copy, b.previousElementSibling)));
+document.getElementById('copy-msg').addEventListener('click', () => copyText(document.getElementById('calc-msg').textContent, document.getElementById('calc-msg')));
+
+/* start */
+let saved = null; try { saved = localStorage.getItem('dim-lang'); } catch(e) {}
+const h = location.hash.slice(1);
+applyLang(h === 'ru' ? 'ru' : (saved === 'ru' ? 'ru' : 'uk'));
+const cBtn = document.getElementById('contact-btn'), cMenu = document.getElementById('contact-menu');
+function closeMenu(){ if (!cMenu.hidden){ cMenu.hidden = true; cBtn.setAttribute('aria-expanded','false'); } }
+cBtn.addEventListener('click', e => { e.stopPropagation(); const open = cMenu.hidden; cMenu.hidden = !open; cBtn.setAttribute('aria-expanded', String(open)); if (open) cMenu.querySelector('a').focus(); });
+document.addEventListener('click', e => { if (!cMenu.contains(e.target) && e.target !== cBtn) closeMenu(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+
+/* intro: the sheet waits for the first scroll, then the video plays to the end */
+const intro = document.querySelector('.intro');
+const vid = document.getElementById('intro-video');
+const finalImg = document.getElementById('intro-final');
+const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const portrait = () => innerWidth / innerHeight < 0.8;
+let fmtNow = null;
+function pickMedia(){
+  const f = portrait() ? '9x16' : '16x9';
+  if (f === fmtNow) return; fmtNow = f;
+  finalImg.src = `media/final-${f}.jpg`;
+  vid.src = `media/intro-${f}.mp4`;
+  if (introLoadAllowed) { vid.preload = 'auto'; try { vid.load(); } catch(e) {} }
+}
+let introLoadAllowed = false;
+function allowLoad(){ if (introLoadAllowed) return; introLoadAllowed = true; vid.preload = 'auto'; try { vid.load(); } catch(e) {} }
+pickMedia();
+addEventListener('resize', () => { if (state() !== 'playing') pickMedia(); });
+// start fetching the video only after the page itself has loaded, so the sheet appears first
+if (document.readyState === 'complete') setTimeout(allowLoad, 300); else addEventListener('load', () => setTimeout(allowLoad, 300));
+function setState(s){ intro.dataset.state = s; }
+const state = () => intro.dataset.state;
+let stopTimer = null;
+function finishIntro(){
+  if (state() === 'final') return;
+  setState('final'); clearTimeout(stopTimer); try { vid.pause(); } catch(e) {}
+}
+function startIntro(){
+  if (state() !== 'drawing') return;
+  closeMenu();
+  if (reduceMotion) { finishIntro(); return; }
+  allowLoad();
+  setState('playing'); scrollTo(0, 0);
+  let started = false;
+  const guard = setTimeout(() => { if (!started) finishIntro(); }, 4000);
+  vid.addEventListener('playing', () => { started = true; clearTimeout(guard); }, {once:true});
+  try { const p = vid.play(); if (p && p.catch) p.catch(() => { clearTimeout(guard); finishIntro(); }); }
+  catch(e) { finishIntro(); }
+  stopTimer = setTimeout(finishIntro, 15000);
+}
+vid.addEventListener('ended', finishIntro);
+vid.addEventListener('error', () => { if (state() === 'playing') finishIntro(); });
+const atTop = () => scrollY < 8;
+addEventListener('wheel', e => {
+  if (state() === 'playing') { e.preventDefault(); return; }
+  if (state() === 'drawing' && atTop() && e.deltaY > 2) { e.preventDefault(); startIntro(); }
+}, {passive:false});
+let touchY = null;
+addEventListener('touchstart', e => { touchY = e.touches[0].clientY; }, {passive:true});
+addEventListener('touchmove', e => {
+  if (state() === 'playing') { if (e.cancelable) e.preventDefault(); return; }
+  if (state() === 'drawing' && atTop() && touchY !== null && touchY - e.touches[0].clientY > 10) { if (e.cancelable) e.preventDefault(); startIntro(); }
+}, {passive:false});
+addEventListener('keydown', e => {
+  if (state() !== 'drawing' || !atTop()) return;
+  if (['ArrowDown','PageDown',' ','Spacebar'].includes(e.key) && !e.target.closest('input,select,textarea,button,a')) { e.preventDefault(); startIntro(); }
+});
+document.getElementById('sheet').addEventListener('click', startIntro);
+// a scroll that slipped past the handlers (e.g. a scrollbar drag) also ends the intro
+addEventListener('scroll', () => { if (state() === 'drawing' && !atTop()) finishIntro(); }, {passive:true});
+if (!atTop() || (location.hash && location.hash !== '#pochatok')) finishIntro();
+
+function fromHash(){ const id = location.hash.slice(1); if (PROJECTS.some(p => p.id === id) && !pd.open) openProject(id); }
+fromHash(); addEventListener('hashchange', fromHash);
+})();
+</script>
+
+</body>
+</html>
